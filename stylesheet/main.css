@@ -1,0 +1,52 @@
+body {
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+#top-logo {
+  text-shadow: 3px 3px gray;
+  font-style: italic;
+  color: yellow;
+  text-decoration: underline;
+  word-spacing: 10px;
+  font-size: 30px;
+}
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+li {
+ display: inline-block;
+ position: relative;
+ width: 60px;
+ font: bold;
+ font-size: 20px;
+}
+li.nomenu{
+  text-decoration: line-through;
+}
+.counter {
+  color: green;
+  font: bold;
+}
+#secret {
+  text-align: left;
+  color: dimgray;
+  float: right;
+}
+.main {
+  margin: auto;
+  max-width: 600px;
+  min-width: 300px;
+}
+.main img {
+  width: 100%;
+}
+.whats {
+  margin: auto;
+  border: 1px solid white ;
+  max-width: 600px;
+  min-width: 300px;
+  padding: 10px 10px;
+}

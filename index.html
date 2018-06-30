@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="stylesheet/main.css">
+  <title>Mr_ozin Official Web Page</title>
+</head>
+<body>
+  <header>
+    <h2 id="top-logo">Mr_ozinのホームページへようこそ!</h2>
+    <p>~あなたは<span class="counter" id="type"></span>人目のお客様~</p>
+    <p>キリ番を踏んだ方はBBSで報告お願いします!</p>
+    <p>111番:zarazさん 222番:childeryさん</p>
+    <ul class="top-menu">
+      <li><a href="profile.html">Profile</a></li>
+      <li class="nomenu"><a href="#">BBS</a></li>
+      <li class="nomenu"><a href="#">Link</a></li>
+      <li><a href="https://twitter.com/Mr_ozin">Twitter</a></li>
+    </ul>
+  </header>
+  <hr>
+  <div class="main">
+    <p>
+      当ホームページではWeb業界エンジニア志望の管理人のプロフィールサイトです。
+      
+    </p>
+    <img src="top.jpg" alt="">
+    <p>管理人(2018年1月、江ノ島にて)</p>
+  </div>
+  <div class="whats">
+    <h3>What's new</h3>
+    <p> 6/30 サイト開設&公開</p>
+  </div>
+  <footer>
+    <p>
+      This page is japanese only.
+    </p>
+    <p>
+      当サイトは1024×768以上の解像度の閲覧を推奨します。
+    </p>
+    <p>
+      <a href="secret.html" id="secret">裏</a>
+    </p>
+  </footer>
+  
+  <script>
+      var i = 0;
+      var txt = '000342';
+      var speed = 50;
+      
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("type").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+
+      window.onload = function(){
+        typeWriter();
+      }
+      </script>
+</body>
+</html>
